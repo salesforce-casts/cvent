@@ -1,0 +1,8 @@
+<apex:page controller="BoxController">
+  
+  
+  <apex:form >
+      <apex:commandButton value="Authenticate" action="{! login }"/>
+  
+  </apex:form>
+</apex:page>

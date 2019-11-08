@@ -1,0 +1,18 @@
+<apex:page controller="exploreSalesforceWithYoutubeController">
+    
+    <apex:form >
+        <apex:inputText value="{! searchText }"/> 
+        <apex:commandButton value="fetch videos" action="{! fetchData }" />
+    </apex:form>
+    
+    <table>        
+        <apex:repeat value="{! dataSetOne }" var="row">
+            <tr>
+                <td>{! row.f1 }</td>
+                <td>{! row.f2 }</td>
+                <td>{! row.f3 }</td>
+                <td> <apex:image url="{! row.f4 }"/>   </td>
+            </tr>    	
+        </apex:repeat>
+    </table>
+</apex:page>

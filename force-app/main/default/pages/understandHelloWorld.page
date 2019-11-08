@@ -1,0 +1,8 @@
+<apex:page controller="exploreHelloWorldController">
+    
+    <apex:form >
+       
+        <apex:commandButton value="Save" action="{! foobar }"/>
+    </apex:form>
+    
+</apex:page>

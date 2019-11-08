@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/exploreProperties": [
+                "exploreProperties/exploreProperties.js"
+            ],
+            "c/exploreHelloWorld": [
+                "exploreHelloWorld/exploreHelloWorld.js"
+            ],
+            "c/recordForm": [
+                "recordForm/recordForm.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

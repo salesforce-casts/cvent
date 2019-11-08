@@ -1,0 +1,4 @@
+<aura:component>
+
+    <aura:html tag="h1"> Hello </aura:html>
+</aura:component>

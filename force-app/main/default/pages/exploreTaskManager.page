@@ -1,0 +1,46 @@
+<apex:page controller="TaskManagerController">
+    
+    <!-- List of all the tasks for the logged in user -->
+    <apex:outputPanel id="out">
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{! tasks }" var="task" >
+                <apex:column value="{! task.ID }" />
+                <apex:column value="{! task.Name }" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:outputPanel>
+    
+    
+    
+    <!-- Ability to create a new Task -->
+    <apex:form >
+        <apex:pageBlock >
+            <apex:inputText value="{! newTask }" />
+            <apex:commandButton value="Create Task" action="{! handleSave }" reRender="out,incompleteTasks"/>
+        </apex:pageBlock>
+    </apex:form>
+    
+    <!-- Mark task as completed -->
+    
+    <apex:form >
+        <apex:outputPanel id="incompleteTasks">
+            <apex:pageBlock >
+                <apex:pageBlockButtons location="top">
+                    <apex:commandButton value="Mark as Completed" action="{! markComplete }" reRender="incompleteTasks" />
+                </apex:pageBlockButtons>
+                
+                <apex:pageBlockTable value="{! tasks }" var="task" >
+                    <apex:column >
+                        <apex:inputCheckbox value="{! task.Checked }"/>
+                    </apex:column>
+                    <apex:column value="{! task.ID }" />
+                    <apex:column value="{! task.Name }" />
+                </apex:pageBlockTable>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+    
+    
+    
+    
+</apex:page>

@@ -1,0 +1,12 @@
+<aura:component >
+    
+    <!-- Receiver -->
+    
+    <aura:attribute name="finalMessage" type="String" />
+    {! v.finalMessage }
+    <aura:handler name="cmpEvent" 
+                  event="c:understandComponentEvent" 
+                  action="{! c.handleReceiveData }" />
+    
+    <c:secondComponentChild />
+</aura:component>

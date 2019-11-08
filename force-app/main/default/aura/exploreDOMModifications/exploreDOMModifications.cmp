@@ -1,0 +1,12 @@
+<aura:component controller="myFirstApexClass" implements="force:appHostable,flexipage:availableForRecordHome" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute name="accounts" type="String" />
+    <aura:attribute name="greeting" type="String" default="Hello" />
+    
+    <lightning:input type="text" value="{! v.greeting }" />
+    
+    <lightning:button aura:id="cstButton" label="Save" onclick="{! c.getAllAccountRecords }" />
+    
+</aura:component>

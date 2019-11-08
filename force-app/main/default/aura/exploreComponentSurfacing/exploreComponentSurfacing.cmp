@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,force:hasRecordId,flexipage:availableForRecordHome" >
+    
+    
+    
+    <lightning:button label="Hide me" onclick="{! c.hideMe }" aura:id="hideme" />
+    
+    
+    
+</aura:component>

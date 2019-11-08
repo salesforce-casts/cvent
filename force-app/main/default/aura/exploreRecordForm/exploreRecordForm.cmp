@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <div class="adjustForm">
+        
+        <lightning:recordForm
+                              recordId="0010o00002ByySuAAJ"
+                              objectApiName="Account"
+                              layoutType="Full"
+                              mode="readonly" />
+        
+    </div>
+</aura:component>

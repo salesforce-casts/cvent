@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction" controller="exploreCustomSearch">
+    
+    <aura:attribute name="message" type="String" />
+    <aura:attribute name="leads" type="Lead[]" />
+    
+    <lightning:input value="{! v.message }"/>
+  
+    
+    <aura:iteration items="{! v.leads }" var="lead">
+        {!lead.Id}
+        {!lead.Name}
+    </aura:iteration>
+    
+    <lightning:button label="save" onclick="{! c.handleSearch }"/>
+</aura:component>

@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<lightning:recordViewForm recordId="{! v.recordId }" 
+                              objectApiName="Account">
+        <lightning:messages />
+        
+        <lightning:outputField fieldName="Name" />
+        <lightning:inputField fieldName="Rating" />
+        <lightning:inputField fieldName="Industry" />
+        
+        <lightning:button class="slds-m-top_small" variant="brand" 
+                          type="submit" name="update" label="Update" />
+    </lightning:recordViewForm>
+</aura:component>

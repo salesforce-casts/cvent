@@ -1,0 +1,3 @@
+<aura:component implements="force:appHostable" >
+	<div class="flash">Record is Saved !!!</div>
+</aura:component>

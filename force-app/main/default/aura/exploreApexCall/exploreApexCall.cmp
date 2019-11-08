@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable" controller="exploreApexCallController">
+	
+	<aura:attribute name="message" type="String" />
+    {! v.message }
+    <lightning:button label="fetch Data" onclick="{! c.fetchData }" />
+    
+</aura:component>

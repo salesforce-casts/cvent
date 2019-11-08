@@ -1,0 +1,34 @@
+<apex:page >
+  Hello World Updated
+    
+    <!--
+
+public class wrapperDisplayController {
+    
+    @AuraEnabled
+    public static List<VisibilitySettingsWrapper> initMethod(){
+        
+	List<Visibility_Settings__c> vs = [SELECT Id, Name from Visibility_Settings__c];
+	
+	List<VisibilitySettingsWrapper> vsWrapper = new <VisibilitySettingsWrapper>();
+	
+	for(integer i =0; i< vs.size(); vs++){
+		VisibilitySettingsWrapper visibilitySettings = new  VisibilitySettingsWrapper ();       
+ 		visibilitySettings.flagSelect = false;
+		visibilitySettings.visibilitySettingRecord  = vs[i];
+
+		vsWrapper.add(visibilitySettings);
+	}
+	
+        return vsWrapper;    
+    }
+    
+       
+    public class VisibilitySettingsWrapper{
+        @AuraEnabled public boolean flagSelect{get;set;}
+        @AuraEnabled public Visibility_Settings__c visibilitySettingRecord{get;set;}
+    }
+}
+
+-->
+</apex:page>

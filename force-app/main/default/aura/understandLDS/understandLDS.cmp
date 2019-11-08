@@ -1,0 +1,34 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId">
+    
+
+    <aura:attribute name="targetRec" type="Object" />
+    <aura:attribute name="simpleRec" type="Object" />
+    <aura:attribute name="error" type="String" />
+    
+    <force:recordData aura:id="record"
+                      recordId="{! v.recordId }"
+                      mode="EDIT"
+                      layoutType="COMPACT"
+                      targetFields="{!v.simpleRec}"
+                      targetError="{!v.error}"/>
+    
+    <div class="Record Details">
+        <lightning:card iconName="standard:lead" title="{!v.simpleRec.Name}">
+            <div class="slds-p-horizontal_small">
+                
+                <lightning:input value="{!v.simpleRec.Name}" /> <br/>
+                <lightning:input value="{!v.simpleRec.Rating}" /><br/>
+                <lightning:input value="{!v.simpleRec.Type}" /><br/>
+                
+                <lightning:button label="Save" onclick="{! c.handleSave }" />
+                
+            </div> 
+        </lightning:card>
+    </div>
+    
+    <aura:if isTrue="{!not(empty(v.error))}">
+        <div class="error">
+            {!v.error}
+        </div>
+    </aura:if>
+</aura:component>

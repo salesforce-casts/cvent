@@ -1,0 +1,11 @@
+<aura:component >
+    
+   <aura:attribute name="message" type="String" /> 
+
+	<aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <lightning:button label="Save" onclick="{! c.handleSave }" />
+    
+    <c:exploreThirdComponent message="{! v.message }" /> 
+    
+</aura:component>

@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	<aura:attribute name="message" type="String" default="This is my name"/>
+    
+    <lightning:input value="{! v.message }" />
+    <lightning:input value="{! v.message }" />
+    <lightning:input value="{! v.message }" />
+</aura:component>

@@ -1,0 +1,15 @@
+<apex:page controller="epxloreRerender">
+    <apex:form >
+        <apex:outputPanel id="accounts">
+            {! message }
+        </apex:outputPanel>
+        - Welcome Krishna Teja -
+        
+        <apex:outputPanel id="acc">
+            {! todayCustom }
+        </apex:outputPanel>
+        
+        <apex:commandButton value="update" action="{! handleUpdate }" reRender="accounts, acc" />
+    </apex:form>
+  
+</apex:page>

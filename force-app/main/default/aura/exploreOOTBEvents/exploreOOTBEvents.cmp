@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <div class="slds-m-top_xx-large slds-p-top_xx-large  slds-p-bottom_xx-large">Hello World</div>
+</aura:component>

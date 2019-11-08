@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" access="global" >
+    
+    <!-- Step1 -->
+	<lightning:navigation aura:id="navService"/>
+    
+    
+    <lightning:button label="navigate" onclick="{! c.handleNavigation }" />
+    
+</aura:component>

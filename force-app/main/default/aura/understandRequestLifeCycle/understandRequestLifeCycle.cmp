@@ -1,0 +1,13 @@
+<aura:component controller="understandRequestLiceCycle">
+    
+    <aura:attribute name="message" type="String" />
+    <aura:attribute name="finalMessage" type="String" />
+    
+    <lightning:input value="{! v.message }" />
+    
+	<lightning:button label="make request" onclick="{! c.handleRequest }" />
+    <div class="finalMessage">
+    	{! v.finalMessage }
+    </div>
+    
+</aura:component>

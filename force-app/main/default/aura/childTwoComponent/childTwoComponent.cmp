@@ -1,0 +1,6 @@
+<aura:component >
+	<aura:attribute name="message" type="String" />
+    
+    
+    <c:childThreeComponent message="{! v.message }"/>
+</aura:component>

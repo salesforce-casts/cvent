@@ -1,0 +1,7 @@
+<aura:component >
+	
+    <!-- Broadcaster -->
+    <aura:registerEvent name="cmpEvent" type="c:understandComponentEvent" />
+    
+    <lightning:button label="Send Data" onclick="{! c.handleSendData }" />
+</aura:component>

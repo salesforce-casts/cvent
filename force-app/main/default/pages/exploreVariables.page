@@ -1,0 +1,28 @@
+<apex:page controller="exploreVariables">
+
+
+    <apex:repeat value="{! a }" var="acc">
+        {! acc.Name } - {! acc.Rating }
+    </apex:repeat>
+    
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{! a }" var="acc">
+            <apex:column value="{! acc.Name }"/>
+            <apex:column value="{! acc.Rating }"/>
+            <apex:column value="{! acc.Id }"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+    <apex:dataTable value="{! a }" var="acc">
+        <apex:column >{! acc.Name }</apex:column>
+        <apex:column >{! acc.Rating }</apex:column>
+        <apex:column >{! acc.Id }</apex:column>
+    </apex:dataTable>
+    
+     <apex:dataList value="{! a }" var="acc">
+        <apex:outputText >{! acc.Name }</apex:outputText> 
+        <apex:outputText > {! acc.Rating }</apex:outputText> 
+        <apex:outputText > {! acc.Id }</apex:outputText> 
+    </apex:dataList>
+ 
+</apex:page>

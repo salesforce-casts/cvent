@@ -1,0 +1,23 @@
+<apex:page >
+    
+    <apex:includeLightning />
+
+    <div id="lightning">
+        
+    </div>
+    
+    <script>
+    
+    $Lightning.use("c:embedLCinVF", function() {
+          $Lightning.createComponent("c:explorePageReferenceTypes",
+              {},
+              "lightning",
+              function(cmp) {
+                console.log("button was created");
+                // do some stuff
+              }
+          );
+        });
+    </script>
+    
+</apex:page>

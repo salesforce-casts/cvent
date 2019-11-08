@@ -1,0 +1,13 @@
+<aura:component controller="exploreFirstComponentController">
+    
+	<aura:attribute name="message" type="String" default="HEY!! Salesforce Casts"/>
+     <aura:attribute name="finalMessage" type="String" />
+    
+    <lightning:button label="Get Records" onclick="{! c.handleFetchRecords }" />
+    
+    
+    <c:exploreSecondComponent message="{! v.message }"/>             	
+    
+   
+    
+</aura:component>

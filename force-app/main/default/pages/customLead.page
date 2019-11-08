@@ -1,0 +1,29 @@
+<apex:page tabStyle="Lead">
+  <apex:sectionHeader title="Lead Edit" subtitle="New Lead"/>
+  <apex:form >
+  
+  
+  <apex:pageBlock >
+      <apex:pageBlockButtons >
+        <apex:commandButton value="save" action="{! save }"/>
+            <apex:commandButton value="save & cancel" action="{! saveAndCancel }"/>
+        <apex:commandButton value="cancel" action="{! cancel }"/>
+      </apex:pageBlockButtons>
+      
+      <apex:pageBlockSection collapsible="true" title="Lead Information">
+          <apex:inputText />
+          <apex:inputText />
+          <apex:inputText />
+          <apex:inputText />
+      </apex:pageBlockSection>
+      
+      <apex:pageBlockSection collapsible="true" title="Address Information">
+          <apex:inputText />
+          <apex:inputText />
+          <apex:inputText />
+          <apex:inputText />
+      </apex:pageBlockSection>
+      
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

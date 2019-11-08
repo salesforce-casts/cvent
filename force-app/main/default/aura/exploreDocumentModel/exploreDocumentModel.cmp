@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	
+    
+    <div class="testing" aura:id="testing">
+    	Hello World!!!
+    </div>
+    <!-- <lightning:button label="show" onclick="{! c.createRecord }" /> -->
+    
+    <lightning:button label="hide" onclick="{! c.hideElement }" />
+</aura:component>

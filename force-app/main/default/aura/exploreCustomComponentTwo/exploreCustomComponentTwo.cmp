@@ -1,0 +1,9 @@
+<aura:component >
+    
+    <aura:attribute name="dataReceived" type="String" />
+    
+    <aura:handler event="c:exploreCustomApplicationEvents" action="{! c.receiveData }" />
+    
+    
+    {! v.dataReceived }
+</aura:component>

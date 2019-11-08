@@ -1,0 +1,5 @@
+({
+	callGreetings : function() {
+		alert('HI');
+	}
+})

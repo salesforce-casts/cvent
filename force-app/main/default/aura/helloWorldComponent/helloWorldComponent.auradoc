@@ -1,0 +1,8 @@
+<aura:documentation>
+	<aura:description>
+    A <code>lightning:accordion</code> component groups related content in a single container. Only one accordion section is expanded at a time by default. When you select a section, it's expanded or collapsed. Set <code>allowMultipleSections</code> Open to allow more than one section to be opened. Each section can hold one or more Lightning components.
+    </aura:description>
+	<aura:example name="ExampleName" ref="exampleComponentName" label="Label">
+		Example Description
+	</aura:example>
+</aura:documentation>

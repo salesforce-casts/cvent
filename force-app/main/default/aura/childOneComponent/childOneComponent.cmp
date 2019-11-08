@@ -1,0 +1,9 @@
+<aura:component >
+
+    <aura:attribute name="message" type="String" default="Hello Salesforce Casts"/>
+   {! v.message } 
+    
+	<lightning:button label="save" onclick="{! c.handleSave }" />
+   
+	<c:childTwoComponent message="{! v.message }" />
+</aura:component>

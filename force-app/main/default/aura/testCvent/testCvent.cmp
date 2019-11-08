@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable">
+
+	<aura:attribute name="message" type="string" default="da da da" />
+    
+	<lightning:button variant="base" label="Base" title="Base action" onclick="{! c.handleClick }"/>
+    
+    {! v.message }
+</aura:component>

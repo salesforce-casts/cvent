@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:registerEvent name="cmpEvent" type="c:exploreCustomApplicationEvents" />
+
+    
+    <lightning:button label="Send data to any other component" onclick="{! c.handleDataTransfer }" />
+</aura:component>

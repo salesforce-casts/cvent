@@ -1,0 +1,5 @@
+<aura:component >
+    
+    And this from child one
+    <c:childComponentTwo />
+</aura:component>

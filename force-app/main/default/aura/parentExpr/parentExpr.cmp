@@ -1,0 +1,11 @@
+<aura:component>
+    <aura:attribute name="parentAttr" type="String" default="parent attribute"/>
+
+    
+    <p> 🐟 parentExpr parentAttr: {!v.parentAttr}</p>
+    
+    <!-- Instantiate the child component -->
+    <c:childExpr childAttr="{#v.parentAttr}" />
+       
+    
+</aura:component>

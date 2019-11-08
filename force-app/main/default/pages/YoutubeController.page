@@ -1,0 +1,31 @@
+<apex:page controller="YoutubeController">
+    
+    
+    <apex:form >
+        <apex:inputText value="{! searchQuery }"/>
+        
+        <apex:commandButton value="Search" action="{! search }" />
+        
+    </apex:form>
+    
+    <table>
+       
+    <apex:repeat value="{! dataSet }" var="video" >
+        <tr>
+            <td>{! video.f1 }
+            </td>
+            <td>{! video.f2 }
+            </td>
+            <td>{! video.f3 }
+            </td>
+            <td><img src="{! video.f4 }" alt="image" />
+            </td>
+        </tr>
+    </apex:repeat> 
+    
+    </table>
+    
+    
+    
+    
+</apex:page>

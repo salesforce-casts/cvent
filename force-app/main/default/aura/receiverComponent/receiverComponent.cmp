@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    
+    <iframe aura:id="vframe" src="{! 'https://' + v.baseDomain + '/apex/broadcasterPage' }" frameborder="0"/>
+</aura:component>
